@@ -46,6 +46,10 @@ namespace Lab3_Console_App
                     Parameters();
                 }
             }
+            else
+            {
+                Parameters();
+            }
 
             void Lists()
             {
