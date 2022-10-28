@@ -1,7 +1,8 @@
 {
   "profiles": {
     "Lab3 Console App": {
-      "commandName": "Project"
+      "commandName": "Project",
+      "commandLineArgs": "-practice testList"
     }
   }
 }
