@@ -54,6 +54,8 @@ namespace WinFormsApp3
         {
             practiceList = WordList.LoadList(Application.OpenForms["Form1"].Controls["listBox1"].Text);
             practiceWord = practiceList.GetWordToPractice();
+            richTextBox1.Focus();
+            richTextBox1.Text = "";
 
             for (int i = 0; i < 100; i++)
             {

@@ -21,7 +21,7 @@ namespace WinFormsApp3
         private void button1_Click(object sender, EventArgs e)
         {
             WordList activeList = WordList.LoadList(Application.OpenForms["Form1"].Controls["listBox1"].Text);
-            foreach(string s in richTextBox1.Lines)
+            foreach(string s in textBox1.Lines)
             {
                 activeList.Remove(comboBox1.SelectedIndex, s);
             }
@@ -32,7 +32,12 @@ namespace WinFormsApp3
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            label1.Text = $"Enter words in {comboBox1.Text} on separate lines.";
+            label1.Text = $"Words in {comboBox1.Text} to remove";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

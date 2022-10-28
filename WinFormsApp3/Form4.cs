@@ -25,7 +25,7 @@ namespace WinFormsApp3
 
         private void button1_Click(object sender, EventArgs e)
         {
-            WordList newList = new WordList(textBox1.Text, richTextBox1.Lines);
+            WordList newList = new WordList(textBox1.Text, textBox2.Lines);
             newList.Save();
             
             this.Close();

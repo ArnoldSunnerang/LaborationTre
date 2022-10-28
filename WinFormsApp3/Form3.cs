@@ -28,13 +28,13 @@ namespace WinFormsApp3
         private void button1_Click(object sender, EventArgs e)
         {
             WordList activeList = WordList.LoadList(Application.OpenForms["Form1"].Controls["listBox1"].Text);
-            string[] translation = new string[listBox1.Items.Count];
+            string[] translation = new string[textBox1.Lines.Length];
             
             for(int i = 0; i < translation.Length; i++)
             {
-                if (i < richTextBox1.Lines.Length)
+                if (i < textBox1.Lines.Length)
                 {
-                    translation[i] = richTextBox1.Lines[i];
+                    translation[i] = textBox1.Lines[i];
 
                 }
                 else

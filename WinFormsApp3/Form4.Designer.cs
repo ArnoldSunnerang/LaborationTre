@@ -29,28 +29,20 @@
         private void InitializeComponent()
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(0, 27);
+            this.textBox1.Location = new System.Drawing.Point(2, 27);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(283, 23);
+            this.textBox1.PlaceholderText = "Enter a name for your list here";
+            this.textBox1.Size = new System.Drawing.Size(281, 23);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Enter a name for your list here";
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(1, 92);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(283, 99);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "Enter languages on separate lines";
             // 
             // label1
             // 
@@ -90,16 +82,25 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(2, 92);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.PlaceholderText = "Enter languages on separate lines";
+            this.textBox2.Size = new System.Drawing.Size(281, 99);
+            this.textBox2.TabIndex = 1;
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.textBox1);
             this.MaximumSize = new System.Drawing.Size(300, 300);
             this.MinimumSize = new System.Drawing.Size(300, 300);
@@ -113,10 +114,10 @@
         #endregion
 
         private TextBox textBox1;
-        private RichTextBox richTextBox1;
         private Label label1;
         private Label label2;
         private Button button1;
         private Button button2;
+        private TextBox textBox2;
     }
 }
